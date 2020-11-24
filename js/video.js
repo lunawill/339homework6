@@ -50,12 +50,12 @@ document.querySelector("#mute").addEventListener("click", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	video.classList.add('oldTime');
 	console.log("Black and White");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	video.classList.remove('oldTime');
 	console.log("Color");
 });
 
